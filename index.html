@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <span id='passwordCriteria'>Password Criteria</span>
+      <div class="flexboxcont">
+        <div class="flexboxItem-1">
+          <label>How many words do you want in your password?</label>
+          <input type="text" id="pwdLength" value="8"/>
+        </div>
+        <span id='displayError'  ></span>
+
+        <div class="flexboxItem">
+          <label>Do you want any Upper Case characters in your password?</label> 
+          <input type="checkbox" id="uCase" checked />
+        </div>
+        <div class="flexboxItem">
+          <label>Do you want any Lower Case characters in your password?</label> 
+          <input type="checkbox" id="lCase" checked />
+        </div>
+        <div class="flexboxItem">
+          <label>Do you want any Numbers in your password?</label> 
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="flexboxItem">
+          <label>Do you want any Special Characters in your password?</label> 
+          <input type="checkbox" id="spChar" checked />
+        </div>
+      </div>
+
+      
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn" >Generate Password</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
